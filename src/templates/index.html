@@ -1,0 +1,39 @@
+<title>Stock Predict App</title>
+<style>
+#Wrapper{
+    text-align: center;
+}
+</style>
+
+<div id="wrapper">
+    <h1> 株価予測アプリ </h1>
+    <p>
+	<img src="/img/download.jpg" alt="" height=”150px”>
+    </p>
+</div>
+<div id="wrapper">
+    <form method="post">
+        {{ forms.scrf_token}}
+
+        {{forms.Uriage.label }}<br>
+        {{forms.Uriage }}<br>
+        {% for error in forms.Uriage.errors %}
+        <div>{{ error}}</div>
+        {% endfor %}<br>
+
+        {{forms.PER.label }}<br>
+        {{forms.PER }}<br>
+        {% for error in forms.PER.errors %}
+        <div>{{ error}}</div>
+        {% endfor %}<br>
+
+        {{forms.Rieki.label }}<br>
+        {{forms.Rieki }}<br>
+        {% for error in forms.Rieki.errors %}
+        <div>{{ error}}</div>
+        {% endfor %}<br>
+
+        {{ forms.submit }}
+
+    </form>
+</div>
