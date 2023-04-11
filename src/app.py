@@ -8,7 +8,7 @@ import numpy as np
 # 学習済みモデルをもとに推論する関数
 def predict(x):
     #　学習済みモデル(stock.pkl)を読み込み
-    model = joblib.load('src/stock.pkl') #ファイル名が変わる
+    model = joblib.load('stock.pkl') #ファイル名が変わる src/を削除
     x = x.reshape(1,-1) #xをreshapeで２次元ベクトルにする。
     stock_predict = model.predict(x)
     return stock_predict
