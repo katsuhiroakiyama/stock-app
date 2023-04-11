@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import joblib
 
 #データの取得
-df= pd.read_csv('src/stock invest1.csv') #ファイルの読み込みをどうするのか
+df= pd.read_csv('stock invest1.csv') #ファイルの読み込みをどうするのか　src/削除
 
 
 # 入力変数と出力変数に切り分け
