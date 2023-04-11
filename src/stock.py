@@ -31,4 +31,4 @@ pred = model.predict(x_test)
 print(classification_report(t_test, pred)) #変更が必要
 
 #　学習済みモデルを保存
-joblib.dump(model, "src/stock.pkl", compress= True) #iris.pklのファイルの保存法と併せて確認が必要
+joblib.dump(model, "stock.pkl", compress= True) #iris.pklのファイルの保存法と併せて確認が必要 src/削除
